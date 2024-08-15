@@ -1,6 +1,7 @@
 import 'package:fitty/widgets/home/date_picker.dart';
 import 'package:fitty/widgets/home/food_list.dart';
 import 'package:fitty/widgets/home/main_diagram.dart';
+import 'package:fitty/widgets/shared/app_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/home/add_floating_button.dart';
@@ -34,6 +35,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       floatingActionButton: const AddFloatingButton(),
+      bottomNavigationBar: const AppNavigationBar(),
     );
   }
 }
