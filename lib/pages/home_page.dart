@@ -3,6 +3,8 @@ import 'package:fitty/widgets/home/food_list.dart';
 import 'package:fitty/widgets/home/main_diagram.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/home/add_floating_button.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});
 
@@ -31,21 +33,7 @@ class _HomePageState extends State<HomePage> {
           FoodList(),
         ],
       ),
-      floatingActionButton: const _AddFloatingButton(),
-    );
-  }
-}
-
-class _AddFloatingButton extends StatelessWidget {
-  const _AddFloatingButton({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return FloatingActionButton.extended(
-      onPressed: () => {},
-      tooltip: 'Add meal',
-      label: const Text('Add meal'),
-      icon: const Icon(Icons.add),
+      floatingActionButton: const AddFloatingButton(),
     );
   }
 }
