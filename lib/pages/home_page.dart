@@ -1,4 +1,6 @@
 import 'package:fitty/widgets/home/date_picker.dart';
+import 'package:fitty/widgets/home/food_list.dart';
+import 'package:fitty/widgets/home/main_diagram.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -20,9 +22,13 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
       ),
       body: ListView(
+        padding: const EdgeInsets.all(20),
         children: const [
           DatePicker(),
-          Placeholder(),
+          SizedBox(height: 20),
+          MainDiagram(),
+          SizedBox(height: 20),
+          FoodList(),
         ],
       ),
       floatingActionButton: const _AddFloatingButton(),
